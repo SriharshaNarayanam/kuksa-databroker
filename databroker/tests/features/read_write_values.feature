@@ -11,6 +11,7 @@ Feature: Reading and writing values of a VSS Data Entry
     Scenario: Writing the current value of an unset Data Entry without authenticating fails
       When a client sets the current value of Vehicle.Width of type float to 13.4
        Then the operation fails with status code 16
+       
 
     Scenario: Read the current value of an unset Data Entry without authenticating fails
       When a client gets the current value of Vehicle.Width
